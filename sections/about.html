@@ -6,6 +6,39 @@
   <title>About Me - Mohamed Barakat</title>
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="icon" href="../images/Mo.jpg" type="image/x-icon">
+  <style>
+    /* Add your existing CSS here */
+
+    .about-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .about-text {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .about-image {
+      flex: 1;
+      max-width: 350px;
+      max-height: 450px;
+    }
+
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .about-image {
+        max-width: 100%;
+        max-height: auto;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -35,19 +68,24 @@
     </ul>
   </nav>
   <main>
+    <section class="about-container">
+      <img src="../images/about_me.jpg" alt="Mohamed Barakat" class="about-image">
+      <div class="about-text">
+        <h2>Info About Me:</h2>
+        <p>Hello! My name is Mohamed Barakat, and I am an Egyptian high school student passionate about programming and cybersecurity. This portfolio showcases my projects, skills, and achievements.</p> 
+    </section>
     <section>
-      <h2>About Me</h2>
-      <p>Hello! My name is Mohamed Barakat, and I am an Egyptian high school student passionate about programming and cybersecurity. This portfolio showcases my projects, skills, and achievements.</p>
       <h3>Skills</h3>
       <ul>
         <li>Programming Languages: Python, JavaScript</li>
         <li>Web Development: HTML, CSS, React</li>
         <li>Cybersecurity: Ethical Hacking, Network Security</li>
       </ul>
+    </div>
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 Mohamed Barakat</p>
+    <p>&copy; 2024 Mohamed Barakat | All Rights Reserved</p>
   </footer>
   <script src="../assets/js/script.js"></script>
 </body>

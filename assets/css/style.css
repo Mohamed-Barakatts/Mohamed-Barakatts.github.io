@@ -2,12 +2,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #051132;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: rgba(55, 47, 1, 0.845);
+  color: rgba(147, 128, 1, 0.845);
   padding: 1.5rem 0;
   text-align: center;
   display: flex;
@@ -20,7 +20,7 @@ header {
   height: 100px;
   border-radius: 50%;
   margin-right: 1rem;
-  border: 3px solid #fff;
+  border: 3px solid #051132;
 }
 
 nav {
@@ -62,7 +62,7 @@ nav ul li a::after {
   width: 0;
   height: 2px;
   background: red;
-  transition: width 0.3s;
+  transition: width 0.5s;
 }
 
 nav ul li a:hover::after,
@@ -78,9 +78,8 @@ nav ul li a.active {
 nav ul li .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #444;
+  background-color: rgba(55, 47, 1, 0.924);
   min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -93,7 +92,7 @@ nav ul li .dropdown-content a {
 
 nav ul li .dropdown-content a:hover,
 nav ul li .dropdown-content a.active {
-  background-color: #555;
+  background-color: #565454;
 }
 
 nav ul li:hover .dropdown-content {
@@ -212,4 +211,20 @@ main {
 
 footer {
   flex-shrink: 0;
+}
+
+nav ul li a:hover {
+  color: rgb(61, 18, 18) !important;
+}
+
+nav ul li a.active {
+  color: rgb(61, 18, 18) !important;
+}
+
+nav {
+  background-color: rgba(72, 62, 1, 0.845); /* Primary Color */
+}
+
+footer {
+  background-color: rgba(72, 62, 1, 0.845); /* Primary Color */
 }

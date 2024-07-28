@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
             this.classList.add('active');
         });
     });
-
     var modalBtns = document.querySelectorAll('.modal-btn');
     modalBtns.forEach(function(btn) {
         btn.addEventListener('click', function() {
