@@ -228,3 +228,14 @@ nav {
 footer {
   background-color: rgba(72, 62, 1, 0.845); /* Primary Color */
 }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+.intro {
+  background-color: #1a1919; /* Replace with your desired color */
+  padding: 20px;
+  border-radius: 8px; /* Optional: To make the edges rounded */
+}

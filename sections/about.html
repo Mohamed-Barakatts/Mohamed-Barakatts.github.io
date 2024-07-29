@@ -6,6 +6,7 @@
   <title>About Me - Mohamed Barakat</title>
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="icon" href="../images/Mo.jpg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     /* Add your existing CSS here */
 
@@ -13,7 +14,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 20px;
+      padding: 15px;
     }
 
     .about-text {
@@ -38,6 +39,44 @@
         max-height: auto;
       }
     }
+    .intro-container {
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .intro-image {
+      max-width: 40%;
+      margin-right: 20px;
+    }
+    
+    .intro-text {
+      flex: 1;
+    }
+
+    .about-text h2 {
+      color: #2718d6; /* Adjust the text color if needed */
+    }
+
+    .skills-section {
+      background-color: #f3f6f0; /* Replace with your desired color */
+      padding: 20px;
+      border-radius: 8px; /* Optional: To make the edges rounded */
+      margin-top: 20px;
+    }
+    
+    .skills-section h2 {
+      color: #2718d6; /* Adjust the text color if needed */
+    }
+    
+    .skills-section ul {
+      list-style-type: disc;
+      padding-left: 50px;
+    }
+    
+    .skills-section li {
+      margin-bottom: 10px;
+    }
+    
   </style>
 </head>
 <body>
@@ -69,20 +108,46 @@
   </nav>
   <main>
     <section class="about-container">
+      <div class="intro-container">
       <img src="../images/about_me.jpg" alt="Mohamed Barakat" class="about-image">
-      <div class="about-text">
-        <h2>Info About Me:</h2>
-        <p>Hello! My name is Mohamed Barakat, and I am an Egyptian high school student passionate about programming and cybersecurity. This portfolio showcases my projects, skills, and achievements.</p> 
+        <div class="about-text">
+          <h2>Info About Me:</h2>
+          <p>Hello! My name is Mohamed Barakat, and I am currently a high school student in grade 12. My journey into the world of technology and computer science began three years ago, and it has been an incredible learning experience ever since.</p>
+
+          <p>Over the past few years, I have immersed myself in various courses and earned numerous certifications, which have significantly deepened my understanding of programming and cybersecurity. So far, I have completed 22 programming projects, ranging from web development, mobile development, and games to cybersecurity simulations, all of which you can explore on this website.</p>
+            
+          <p>This website is a testament to my skills and dedication, built entirely from scratch based on my accumulated knowledge and experience.</p>
+            
+          <p>addition to my technical skills, I am passionate about continuous learning and staying updated with the latest trends in technology. I am particularly interested in the fields of ethical hacking and network security and aspire to contribute to making our digital world a safer place.</p>
+            
+          <p>Thank you for visiting my portfolio. I hope you find my projects insightful and inspiring.</p> 
+      </div>
     </section>
-    <section>
-      <h3>Skills</h3>
+    <section class="skills-section">
+      <h2>My Technical Skills:</h2>
       <ul>
-        <li>Programming Languages: Python, JavaScript</li>
-        <li>Web Development: HTML, CSS, React</li>
-        <li>Cybersecurity: Ethical Hacking, Network Security</li>
+        <li>Python Programming Language</li>
+        <li>C++ Programming Language</li>
+        <li>Linux Operating System (Kali)</li>
+        <li>Object-Oriented Programming (OOP)</li>
+        <li>Git and GitHub</li>
+        <li>Networks</li>
+        <li>Command and Control</li>
+        <li>IT and Computer Science Foundations</li>
       </ul>
-    </div>
-    </section>
+      <h2>My Soft Skills:</h2>
+      <ul>
+        <li>Problem Solving</li>
+        <li>Leadership</li>
+        <li>Communication</li>
+        <li>Presentation</li>
+      </ul>
+      <h2>Language Proficiency:</h2>
+      <ul>
+        <li>Arabic Language</li>
+        <li>English Language</li>
+      </ul>
+    </section>    
   </main>
   <footer>
     <p>&copy; 2024 Mohamed Barakat | All Rights Reserved</p>
