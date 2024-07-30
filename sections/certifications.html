@@ -12,42 +12,131 @@
   <header>
     <img src="../images/Mo.jpg" alt="Mohamed Barakat" class="profile-image">
     <h1>Certifications</h1>
+    <!-- RESPONSIVE NAVIGATION MENU -->
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar">Menu</label>
+      <nav class="navbar">
+          <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="projects.html">Projects +</a>
+                  <ul>
+                      <li><a href="projects.html#web-projects">Web Projects +</a>
+                            <ul>
+                              <li><a href="projects.html#web-projects#p1">Project #01</a></li>
+                              <li><a href="projects.html#web-projects#p2">Project #02</a></li>
+                              <li><a href="projects.html#web-projects#p3">Project #03</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="projects.html#cybersecurity-projects">Cybersecurity Projects +</a>
+                          <ul>
+                              <li><a href="projects.html#cybersecurity-projects#p1">Project #01</a></li>
+                              <li><a href="projects.html#cybersecurity-projects#p2">Project #02</a></li>
+                              <li><a href="projects.html#cybersecurity-projects#p3">Project #03</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </li>
+              <li><a href="courses.html">Self-paced Courses +</a>
+                  <ul>
+                    <li><a href="courses.html#yt">YouTube</a>
+                      <ul>
+                        <li><a href="courses.html#yt#c1">Course #01</a></li>
+                        <li><a href="courses.html#yt#c2">Course #02</a></li>
+                        <li><a href="courses.html#yt#c3">Course #03</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="courses.html#pa">ProgrammingAdvices</a>
+                      <ul>
+                        <li><a href="courses.html#pa#c1">Course #01</a></li>
+                        <li><a href="courses.html#pa#c2">Course #02</a></li>
+                        <li><a href="courses.html#pa#c3">Course #03</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="courses.html#gl">Great Learning</a>
+                      <ul>
+                        <li><a href="courses.html#gl#c1">Course #01</a></li>
+                        <li><a href="courses.html#gl#c2">Course #02</a></li>
+                        <li><a href="courses.html#gl#c3">Course #03</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="courses.html#ed">Edraak</a>
+                      <ul>
+                        <li><a href="courses.html#ed#c1">Course #01</a></li>
+                        <li><a href="courses.html#ed#c2">Course #02</a></li>
+                        <li><a href="courses.html#ed#c3">Course #03</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+              </li>
+              <li><a href="certifications.html">Certifications +</a> <!--certs-->
+                  <ul>
+                      <li><a href="#">grid gallery</a></li>
+                      <li><a href="#">flex gallery</a></li>
+                  </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
   </header>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li class="dropdown">
-        <a href="projects.html" class="dropbtn">Projects</a>
-        <ul class="dropdown-content">
-          <li><a href="projects.html#web-projects">Web Projects</a></li>
-          <li><a href="projects.html#cybersecurity-projects">Cybersecurity Projects</a></li>
-        </ul>
-      </li>
-      <li><a href="courses.html">Self-paced Courses</a></li>
-      <li class="dropdown">
-        <a href="certifications.html" class="dropbtn">Certifications</a>
-        <ul class="dropdown-content">
-          <li><a href="certifications.html#security-certifications">Security Certifications</a></li>
-          <li><a href="certifications.html#programming-certifications">Programming Certifications</a></li>
-        </ul>
-      </li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  
   <main>
-    <section id="security-certifications">
-      <h2>Security Certifications</h2>
-      <p>Details about security certifications...</p>
+    <section id="pa-cert1">
+      <h2>ProgrammingAdvices Certification #01</h2>
+      <p>Details about this certification ...</p>
     </section>
-    <section id="programming-certifications">
-      <h2>Programming Certifications</h2>
-      <p>Details about programming certifications...</p>
+    <section id="pa-cert2">
+      <h2>ProgrammingAdvices Certification #02</h2>
+      <p>Details about this certification ...</p>
     </section>
+    <!-- Add more sections for ProgrammingAdvices certifications -->
+
+    <section id="gl-cert1">
+      <h2>Great Learning Certification #01</h2>
+      <p>Details about this certification ...</p>
+    </section>
+    <section id="gl-cert2">
+      <h2>Great Learning Certification #02</h2>
+      <p>Details about this certification ...</p>
+    </section>
+    <!-- Add more sections for Great Learning certifications -->
+
+    <section id="ed-cert1">
+      <h2>Edraak Certification #01</h2>
+      <p>Details about this certification ...</p>
+    </section>
+    <section id="ed-cert2">
+      <h2>Edraak Certification #02</h2>
+      <p>Details about this certification ...</p>
+    </section>
+    <!-- Add more sections for Edraak certifications -->
   </main>
   <footer>
     <p>&copy; 2024 Mohamed Barakat | All Rights Reserved</p>
   </footer>
-  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/script.js">
+      document.addEventListener("DOMContentLoaded", function () {
+        var dropdowns = document.querySelectorAll(".dropdown-submenu");
+    
+        dropdowns.forEach(function (dropdown) {
+          dropdown.addEventListener("mouseover", function () {
+            this.querySelector(".dropdown-content").style.display = "block";
+          });
+    
+          dropdown.addEventListener("mouseout", function () {
+            this.querySelector(".dropdown-content").style.display = "none";
+          });
+        });
+    
+        var mainDropdown = document.querySelector(".dropdown");
+        mainDropdown.addEventListener("mouseover", function () {
+          this.querySelector(".dropdown-content").style.display = "block";
+        });
+    
+        mainDropdown.addEventListener("mouseout", function () {
+          this.querySelector(".dropdown-content").style.display = "none";
+        });
+      });
+  </script>
 </body>
 </html>
