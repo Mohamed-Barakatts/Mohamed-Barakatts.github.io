@@ -1,39 +1,39 @@
 /* Universal Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
   margin: 0;
   padding: 0;
   background-color: #051132;
-  line-height: 1.6;
   display: flex;
   flex-direction: column;
   height: 100%;
+  padding-top: 200px; /* Adjust this value based on the combined height of your header and nav */
 }
 
 html, body {
   height: 100%;
+  
 }
-
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: capitalize;
-  text-decoration: none;
-} */
 
 /* Header Styles */
 header {
-  background-color: rgba(55, 47, 1, 0.845);
-  color: rgba(147, 128, 1, 0.845);
-  padding: 1.5rem 0;
+  background-color: rgba(37, 32, 1, 0.845);
+  color: rgba(219, 208, 135, 0.845);
+  padding: 2rem 0;
   text-align: left; /* Change text alignment to left */
   display: flex;
   align-items: center;
   justify-content: flex-start; /* Align items to the start (left) */
   padding-left: 20px; /* Adjust padding as needed */
   margin-left: 0; /* Ensure no extra margin on the left */
+  /* position: -webkit-sticky; */
+  position:fixed ;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 
@@ -48,13 +48,14 @@ header .profile-image {
 
 /* Navbar Styles */
 nav {
-  background-color: rgba(72, 62, 1, 0.845);
+  background-color: rgba(73, 73, 46, 0.845);
   color: #fff;
   padding: 1rem 0;
   text-align: center;
-  position: sticky;
+  position: -webkit-sticky;
+  /* position: fixed; */
   top: 0;
-  z-index: 1000;
+  /* z-index: 10001; */
 }
 
 nav ul {
@@ -67,9 +68,9 @@ nav ul {
   position: relative;
 }
 
-/* nav ul li {
+nav ul li {
   position: relative;
-} */
+}
 
 nav ul li a {
   color: #fff;
@@ -97,40 +98,6 @@ nav ul li a:hover,
 nav ul li a.active {
   color: #ff6347;
 }
-
-/* nav ul li .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgba(55, 47, 1, 0.924);
-  min-width: 160px;
-  z-index: 1;
-} */
-
-/* nav ul li .dropdown-content a {
-  color: #fff;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-nav ul li .dropdown-content a:hover,
-nav ul li .dropdown-content a.active {
-  background-color: #565454;
-} */
-
-/* nav ul li:hover .dropdown-content {
-  display: block;
-}
-
-nav ul li:hover .dropbtn {
-  color: #ff6347;
-}
-
-nav ul li .dropdown-content a.active,
-nav ul li a.active-main {
-  color: red;
-} */
-
 nav ul li a:hover {
   color: rgb(61, 18, 18) !important;
 }
@@ -138,36 +105,6 @@ nav ul li a:hover {
 nav ul li a.active {
   color: rgb(61, 18, 18) !important;
 }
-
-/* nav ul li:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-submenu {
-  position: relative;
-}
-
-.dropdown-submenu .dropdown-content {
-  display: none;
-  top: 0;
-  left: 100%;
-  margin-top: -1px;
-}
-
-.dropdown-submenu:hover .dropdown-content {
-  display: block;
-} */
-
-/* .dropdown-content a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #3e8e41;
-} */
 
 /* Responsive Navigation Bar Styles */
 header .navbar ul {
@@ -227,7 +164,7 @@ header label {
 
 @media(max-width: 991px) {
   header {
-      padding: 20px;
+      padding: 10px;
   }
 
   header label {
@@ -242,10 +179,17 @@ header label {
       background: #1e1c1c;
       border-top: 1px solid rgba(0, 0, 0, .1);
       display: none;
+      z-index: 1001;
   }
+
+  /* header .navbar ul {
+    flex-direction: column;
+  } */
 
   header .navbar ul li {
       width: 100%;
+      /*  */
+
   }
 
   header .navbar ul li ul {
@@ -263,7 +207,8 @@ header label {
   }
 
   #menu-bar:checked ~ .navbar {
-      display: initial;
+      display: block;
+      /* display: initial; */
   }
 }
 
@@ -291,18 +236,6 @@ section.active-section {
   border-radius: 8px;
 }
 
-/* Footer Styles */
-footer {
-  background-color: rgba(72, 62, 1, 0.845);
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  flex-shrink: 0;
-}
-
-footer section {
-  margin-bottom: 1rem;
-}
 
 /* Modal Styles */
 .modal {
@@ -316,7 +249,7 @@ footer section {
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
-  padding-top: 60px;
+  /* padding-top: 60px; */
 }
 
 .modal-content {
@@ -359,4 +292,160 @@ footer section {
 /* Contact Page Specific Styles */
 #contact a {
   color: blue;
+}
+
+/* Footer Styles */
+footer {
+  background-color: rgba(72, 62, 1, 0.845);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  flex-shrink: 0;
+  width: 100%; /* Ensure the footer takes the full width of the viewport */
+  padding: 2rem 0; /* Increase padding for lengthier footer */
+}
+
+footer section {
+  margin-bottom: 1rem;
+}
+
+/* Certification Section Styles */
+#cert-intro {
+  background-color: #e1d126;
+  padding: 2rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.cert-section {
+  background-color: #080808;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(76, 152, 10, 0.874);
+}
+
+.cert-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.cert-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.cert-image {
+  max-width: 600px;
+  height: auto;
+  margin-right: 2rem;
+}
+
+.cert-info {
+  color: white;
+  margin-left: 2rem;
+  text-align: left;
+}
+
+.cert-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cert-buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+}
+
+.cert-buttons button:hover {
+  background-color: rgba(114, 99, 10, 0.845);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cert-buttons button:focus {
+  outline: none;
+}
+
+.cert-title {
+  font-size: 2rem;
+  font-family:'Times New Roman', Times, serif, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.sub-headers h2 {
+  color: #2718d6; /* Adjust the text color if needed */
+}
+
+/* Modal styles */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 180px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 750px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 20px 0;
+  height: 100px;
+}
+
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 150px;
+  right: 300px;
+  color: #fd0303;
+  font-size: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
 }
