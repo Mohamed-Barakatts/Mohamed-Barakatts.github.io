@@ -131,4 +131,42 @@ function viewAndDownloadCert(url) {
       modal.style.display = "none";
     }
   }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    let slides = document.querySelectorAll('.slide');
+    let dots = document.querySelectorAll('.dot');
+    let currentSlide = 0;
+    let slideInterval;
+  
+    function showSlide(index) {
+      slides[currentSlide].classList.remove('active');
+      dots[currentSlide].classList.remove('active');
+      currentSlide = index;
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+      resetInterval();
+    }
+  
+    function showNextSlide() {
+      showSlide((currentSlide + 1) % slides.length);
+    }
+  
+    function showPrevSlide() {
+      showSlide((currentSlide - 1 + slides.length) % slides.length);
+    }
+  
+    function resetInterval() {
+      clearInterval(slideInterval);
+      slideInterval = setInterval(showNextSlide, 3000);
+    }
+  
+    document.querySelector('.next').addEventListener('click', showNextSlide);
+    document.querySelector('.prev').addEventListener('click', showPrevSlide);
+  
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => showSlide(index));
+    });
+  
+    slideInterval = setInterval(showNextSlide, 3000);
+  });
   

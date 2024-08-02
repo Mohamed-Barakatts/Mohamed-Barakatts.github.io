@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding-top: 200px; /* Adjust this value based on the combined height of your header and nav */
+  padding-top: 170px; /* Adjust this value based on the combined height of your header and nav */
 }
 
 html, body {
@@ -382,9 +382,13 @@ footer section {
   margin-bottom: 1rem;
 }
 
+.sub-headers h3 {
+  color: #2718d6; /* Adjust the text color if needed */
+}
 .sub-headers h2 {
   color: #2718d6; /* Adjust the text color if needed */
 }
+
 
 /* Modal styles */
 .modal {
@@ -448,4 +452,75 @@ footer section {
 
 html {
   scroll-behavior: smooth;
+}
+
+.image-slider {
+  position: relative;
+  width: 100%;
+  max-width: 2000px; /* Adjust as needed */
+  margin: auto;
+}
+
+.image-slider .slides {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-slider .slide {
+  display: none;
+  width: 100%;
+  height: 700px; /* Adjust as needed */
+  object-fit: cover;
+}
+
+.image-slider .slide.active {
+  display: block;
+}
+
+.image-slider .arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.image-slider .arrows span {
+  background-color: rgba(0, 0, 0, 0.696);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.image-slider .dots {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.image-slider .dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.image-slider .dots .dot.active {
+  background-color: rgb(4, 21, 251);
+}
+
+.intro-paragraph {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Font for the introduction paragraph */
+  font-size: 30px; /* Adjust the font size as needed */
+  color: #333; /* Adjust the font color as needed */
+  margin: 20px;
+}
+
+header h1 {
+  margin-right: auto; /* Pushes the navigation to the right */
 }
