@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="icon" href="../images/Mo.jpg" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+  
   <style>
     nav ul li a:hover {
       color: rgb(61, 18, 18) !important;
@@ -16,6 +16,12 @@
     nav ul li a.active {
       color: rgb(61, 18, 18) !important;
     }
+    
+    .project {
+      border: 5px solid #572e2e;
+      padding: 15px;
+    }
+    
   </style>
 </head>
 <body>
@@ -26,95 +32,363 @@
     <!-- RESPONSIVE NAVIGATION MENU -->
     <input type="checkbox" id="menu-bar">
     <label for="menu-bar">Menu</label>
-      <nav class="navbar">
+    <nav class="navbar">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects +</a>
           <ul>
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="about.html">About Me</a></li>
-              <li><a href="projects.html">Projects +</a>
-                  <ul>
-                      <li><a href="projects.html#ai">Artificial Intelligence +</a>
-                            <ul>
-                              <li><a href="projects.html#ai#p1">Project #01</a></li>
-                              <li><a href="projects.html#ai#p2">Project #02</a></li>
-                              <li><a href="projects.html#ai#p3">Project #03</a></li>
-                          </ul>
-                      </li>
-                      <li><a href="projects.html#cs">Cybersecurity +</a>
-                          <ul>
-                              <li><a href="projects.html#cs#p1">Project #01</a></li>
-                              <li><a href="projects.html#cs#p2">Project #02</a></li>
-                              <li><a href="projects.html#cs#p3">Project #03</a></li>
-                          </ul>
-                      </li>
-                      <li><a href="projects.html#gm">Gaming +</a>
-                          <ul>
-                              <li><a href="projects.html#gm#p1">Project #04</a></li>
-                              <li><a href="projects.html#gm#p2">Project #05</a></li>
-                              <li><a href="projects.html#gm#p3">Project #06</a></li>
-                          </ul>
-                      </li>
-                      <li><a href="projects.html#mp">Mobile Apps +</a>
-                          <ul>
-                              <li><a href="projects.html#mp#p1">Project #07</a></li>
-                              <li><a href="projects.html#mp#p2">Project #08</a></li>
-                              <li><a href="projects.html#mp#p3">Project #09</a></li>
-                          </ul>
-                      </li>
-                      <li><a href="projects.html#da">Desktop Apps +</a>
-                          <ul>
-                              <li><a href="projects.html#da#p1">Project #10</a></li>
-                              <li><a href="projects.html#da#p2">Project #11</a></li>
-                              <li><a href="projects.html#da#p3">Project #12</a></li>
-                          </ul>
-                      </li>
-                  </ul>
-              </li>
-                <!-- CERTS -->
-                <li><a href="certifications.html">Courses & Certifications +</a>
-                  <ul>
-                    <li><a href="certifications.html#pa">ProgrammingAdvices +</a>
-                      <ul>
-                        <li><a href="certifications.html#coursecert1">Course / Cert #01</a></li>
-                        <li><a href="certifications.html#coursecert2">Course / Cert #02</a></li>
-                        <li><a href="certifications.html#coursecert3">Course / Cert #03</a></li>
-                        <li><a href="certifications.html#coursecert4">Course / Cert #04</a></li>
-                        <li><a href="certifications.html#coursecert5">Course / Cert #05</a></li>
-                        <li><a href="certifications.html#coursecert6">Course / Cert #06</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="certifications.html#gl">Great Learning +</a>
-                      <ul>
-                        <li><a href="certifications.html#coursecert7">Course / Cert #07</a></li>
-                        <li><a href="certifications.html#coursecert8">Course / Cert #08</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="certifications.html#ed">Edraak +</a>
-                      <ul>
-                        <li><a href="certifications.html#coursecert9">Course / Cert #09</a></li>
-                        <li><a href="certifications.html#coursecert10">Course / Cert #10</a></li>
-                        <li><a href="certifications.html#coursecert11">Course / Cert #11</a></li>
-                        <li><a href="certifications.html#coursecert12">Course / Cert #12</a></li>
-                        <li><a href="certifications.html#coursecert13">Course / Cert #13</a></li>
-                        <li><a href="certifications.html#coursecert14">Course / Cert #14</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="certifications.html#other">Other Courses</a>
-                  </ul>
-              </li>
-              <li><a href="contact.html">Contact</a></li>
+            <li><a href="#ai">Artificial Intelligence +</a>
+              <ul>
+                <li><a href="#project1">Project #01</a></li>
+                <li><a href="projects.html#ai#p2">Project #02</a></li>
+                <li><a href="projects.html#ai#p3">Project #03</a></li>
+              </ul>
+            </li>
+            <li><a href="projects.html#cs">Cybersecurity +</a>
+              <ul>
+                <li><a href="projects.html#cs#p1">Project #04</a></li>
+                <li><a href="projects.html#cs#p2">Project #05</a></li>
+                <li><a href="projects.html#cs#p3">Project #06</a></li>
+              </ul>
+            </li>
+            <li><a href="#gm">Gaming +</a>
+              <ul>
+                <li><a href="#project7">Project #07</a></li>
+                <li><a href="#project8">Project #08</a></li>
+                <li><a href="#project9">Project #09</a></li>
+              </ul>
+            </li>
+            <li><a href="projects.html#mp">Mobile Apps +</a>
+              <ul>
+                <li><a href="projects.html#mp#p1">Project #10</a></li>
+                <li><a href="projects.html#mp#p2">Project #11</a></li>
+                <li><a href="projects.html#mp#p3">Project #12</a></li>
+              </ul>
+            </li>
+            <li><a href="projects.html#da">Desktop Apps +</a>
+              <ul>
+                <li><a href="projects.html#da#p1">Project #13</a></li>
+                <li><a href="projects.html#da#p2">Project #14</a></li>
+                <li><a href="projects.html#da#p3">Project #15</a></li>
+              </ul>
+            </li>
           </ul>
-      </nav>
+        </li>
+        <li><a href="certifications.html">Courses & Certifications +</a>
+          <ul>
+            <li><a href="certifications.html#pa">ProgrammingAdvices +</a>
+              <ul>
+                <li><a href="certifications.html#coursecert1">Course / Cert #01</a></li>
+                <li><a href="certifications.html#coursecert2">Course / Cert #02</a></li>
+                <li><a href="certifications.html#coursecert3">Course / Cert #03</a></li>
+                <li><a href="certifications.html#coursecert4">Course / Cert #04</a></li>
+                <li><a href="certifications.html#coursecert5">Course / Cert #05</a></li>
+                <li><a href="certifications.html#coursecert6">Course / Cert #06</a></li>
+              </ul>
+            </li>
+            <li><a href="certifications.html#gl">Great Learning +</a>
+              <ul>
+                <li><a href="certifications.html#coursecert7">Course / Cert #07</a></li>
+                <li><a href="certifications.html#coursecert8">Course / Cert #08</a></li>
+              </ul>
+            </li>
+            <li><a href="certifications.html#ed">Edraak +</a>
+              <ul>
+                <li><a href="certifications.html#coursecert9">Course / Cert #09</a></li>
+                <li><a href="certifications.html#coursecert10">Course / Cert #10</a></li>
+                <li><a href="certifications.html#coursecert11">Course / Cert #11</a></li>
+                <li><a href="certifications.html#coursecert12">Course / Cert #12</a></li>
+                <li><a href="certifications.html#coursecert13">Course / Cert #13</a></li>
+                <li><a href="certifications.html#coursecert14">Course / Cert #14</a></li>
+              </ul>
+            </li>
+            <li><a href="certifications.html#other">Other Courses</a>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section id="web-projects">
-      <h2>Web Projects</h2>
-      <p>Details about web projects...</p>
+    <section id="ai">
+      <h4>Artificial Intelligence Projects</h4>
     </section>
-    <section id="cybersecurity-projects">
-      <h2>Cybersecurity Projects</h2>
-      <p>Details about cybersecurity projects...</p>
+    <section id="projects">
+      <h2 id="project1">Project #01</h2>
+      <div class="project">
+        <h3>Smart Chatbot</h3>
+        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
+        
+        <!-- Live Demo Button -->
+        <a href="https://mohamed-barakatts.github.io/Ping-Pong-Game/" target="_blank" class="button">Live Demo</a>
+        
+        <!-- Source Code Button -->
+        <a href="https://github.com/Mohamed-Barakatts/AI-Chatbot" target="_blank" class="button">Source Code</a>
+        
+        <!-- Image Preview -->
+        <img src="../images/pro1.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+      </div>
     </section>
+    
+    <section id="projects">
+      <h2 id="project2">Project #02</h2>
+      <div class="project">
+        <h3>AI Face Detection</h3>
+        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
+        
+        <!-- Live Demo Button -->
+        <a href="https://mohamed-barakatts.github.io/Ping-Pong-Game/" target="_blank" class="button">Live Demo</a>
+        
+        <!-- Source Code Button -->
+        <a href="https://github.com/Mohamed-Barakatts/Face-Blur-Application" target="_blank" class="button">Source Code</a>
+        
+        <!-- Image Preview -->
+        <img src="../images/pro3.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+      </div>
+    </section>
+
+    <section id="cs">
+      <h4>Cybersecurity Projects</h4>
+    </section>
+    <section id="projects">
+      <h2 id="project3">Project #03</h2>
+      <div class="project">
+        <h3>Phone Number Tracking</h3>
+        <p>A Python script that extracts and displays detailed information about phone numbers using the `phonenumbers` library. This tool allows users to input a phone number with its country code and provides information such as country code, national number, region, country, carrier, and timezone.
+
+          Features:
+          - Parses and validates phone numbers with the `phonenumbers` library.
+          - Retrieves information such as country code, national number, region, country, carrier, and timezone.
+          - Handles invalid phone numbers gracefully.
+          
+          Usage:
+          1. Run the script in a Python environment.
+          2. Enter a phone number with its country code when prompted.
+          3. View detailed information about the phone number in the terminal.
+          
+          Dependencies:
+          - `phonenumbers` library (install via `pip install phonenumbers`)
+          
+          This script is useful for validating and retrieving basic information about phone numbers, suitable for use in various applications and services that require phone number data.
+        </p>
+        
+        <!-- Live Demo Button -->
+        <a href="https://mohamed-barakatts.github.io/Ping-Pong-Game/" target="_blank" class="button">Live Demo</a>
+        
+        <!-- Source Code Button -->
+        <a href="https://github.com/Mohamed-Barakatts/Phone-Number-Information-Extractor" target="_blank" class="button">Source Code</a>
+        
+        <!-- Image Preview -->
+        <img src="../images/pro4.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+      </div>
+    </section>
+    <section id="projects">
+      <h2 id="project4">Project #04</h2>
+      <div class="project">
+        <h3>Password Manager</h3>
+        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
+        
+        <!-- Live Demo Button -->
+        <a href="https://mohamed-barakatts.github.io/Ping-Pong-Game/" target="_blank" class="button">Live Demo</a>
+        
+        <!-- Source Code Button -->
+        <a href="https://github.com/Mohamed-Barakatts/Password-Manager" target="_blank" class="button">Source Code</a>
+        
+        <!-- Image Preview -->
+        <img src="../images/pro5.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+      </div>
+    </section>
+    <section id="projects">
+      <h2 id="project5">Project #05</h2>
+      <div class="project">
+        <h3>Network Intrusion Detection System</h3>
+        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
+        
+        <!-- Live Demo Button -->
+        <a href="https://mohamed-barakatts.github.io/Ping-Pong-Game/" target="_blank" class="button">Live Demo</a>
+        
+        <!-- Source Code Button -->
+        <a href="https://github.com/Mohamed-Barakatts/Network-Detection-System" target="_blank" class="button">Source Code</a>
+        
+        <!-- Image Preview -->
+        <img src="../images/pro6.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+      </div>
+    </section>
+
+    <section id="gm">
+      <h4>Gaming Projects</h4>
+    </section>
+    <section id="projects">
+      <h2 id="project6">Project #06</h2>
+      <div class="project">
+        <h3>Ping Pong Game</h3>
+        <p>## Overview
+          This is a simple Ping Pong game created using the Python `turtle` module. It includes two paddles, a ball, and a scoring system. The game can be controlled using the keyboard.</p>
+          
+        <p>## Features
+          - Two-player game
+          - Simple scoring system
+          - Realistic paddle and ball movement
+          - Center dashed line</p>
+          
+        <p>## Controls
+          <li> Player 1: Use `W` to move up and `S` to move down</li>
+          <li> Player 2: Use the `Up` and `Down` arrow keys</li>
+        </p>
+        
+        <!-- Live Demo Button -->
+        <a href="../pros/index.html" target="_blank" class="button">Live Demo</a>
+        
+        <!-- Source Code Button -->
+        <a href="https://github.com/Mohamed-Barakatts/Ping-Pong-Game" target="_blank" class="button">Source Code</a>
+        
+        <!-- Image Preview -->
+        <img src="../images/pro2.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+      </div>
+    </section>
+    
+    <section id="projects">
+      <h2 id="project7">Project #07</h2>
+      <div class="project">
+        <h3>Snake game</h3>
+        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
+        
+        <!-- Live Demo Button -->
+        <a href="https://mohamed-barakatts.github.io/Ping-Pong-Game/" target="_blank" class="button">Live Demo</a>
+        
+        <!-- Source Code Button -->
+        <a href="https://github.com/Mohamed-Barakatts/Snake-Game" target="_blank" class="button">Source Code</a>
+        
+        <!-- Image Preview -->
+        <img src="../images/pro7.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 id="project8">Project #08</h2>
+      <div class="project">
+        <h3>Tic-Tac-Toe Game</h3>
+        <p>This is a classic two-player Tic-Tac-Toe Game game built with Python. You can play the game or view the source code below.</p>
+        
+        <!-- Live Demo Button -->
+        <a href="https://mohamed-barakatts.github.io/Ping-Pong-Game/" target="_blank" class="button">Live Demo</a>
+        
+        <!-- Source Code Button -->
+        <a href="https://github.com/Mohamed-Barakatts/Tic-Tac-Toe-Game" target="_blank" class="button">Source Code</a>
+        
+        <!-- Image Preview -->
+        <img src="../images/pro8.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 id="project9">Project #09</h2>
+      <div class="project">
+        <h3>Jets War Game</h3>
+        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
+        
+        <!-- Live Demo Button -->
+        <a href="https://mohamed-barakatts.github.io/Ping-Pong-Game/" target="_blank" class="button">Live Demo</a>
+        
+        <!-- Source Code Button -->
+        <a href="https://github.com/Mohamed-Barakatts/Space_War_Game" target="_blank" class="button">Source Code</a>
+        
+        <!-- Image Preview -->
+        <img src="../images/pro9.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+      </div>
+    </section>
+
+    <section id="dk">
+      <h4>Desktop Applications</h4>
+    </section>
+    <section id="projects">
+      <h2 id="project10">Project #10</h2>
+      <div class="project">
+        <h3>IDE application</h3>
+        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
+        
+        <!-- Live Demo Button -->
+        <a href="https://mohamed-barakatts.github.io/Ping-Pong-Game/" target="_blank" class="button">Live Demo</a>
+        
+        <!-- Source Code Button -->
+        <a href="https://github.com/Mohamed-Barakatts/PyCodeLite/" target="_blank" class="button">Source Code</a>
+        
+        <!-- Image Preview -->
+        <img src="../images/pro10.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+      </div>
+    </section>
+  </section>
+  <section id="projects">
+    <h2 id="project11">Project #11</h2>
+    <div class="project">
+        <h3>Weather Application</h3>
+        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
+        
+        <!-- Live Demo Button -->
+        <a href="https://mohamed-barakatts.github.io/Ping-Pong-Game/" target="_blank" class="button">Live Demo</a>
+        
+        <!-- Source Code Button -->
+        <a href="https://github.com/Mohamed-Barakatts/Weather-App" target="_blank" class="button">Source Code</a>
+        
+        <!-- Image Preview -->
+        <img src="../images/pro11.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+      </div>
+    </section>
+    </section>
+    <section id="projects">
+      <h2 id="project12">Project #12</h2>
+      <div class="project">
+        <h3>To-Do List Application</h3>
+        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
+        
+        <!-- Live Demo Button -->
+        <a href="https://mohamed-barakatts.github.io/Ping-Pong-Game/" target="_blank" class="button">Live Demo</a>
+        
+        <!-- Source Code Button -->
+        <a href="https://github.com/Mohamed-Barakatts/To-Do-List-App" target="_blank" class="button">Source Code</a>
+        
+        <!-- Image Preview -->
+        <img src="../images/pro12.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+      </div>
+    </section>
+    <section id="mb">
+      <h4>Mobile Applications</h4>
+    </section>
+    <section id="projects">
+      <h2 id="project13">Project #13</h2>
+      <div class="project">
+        <h3>Calculator Application</h3>
+        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
+        
+        <!-- Live Demo Button -->
+        <a href="https://mohamed-barakatts.github.io/Ping-Pong-Game/" target="_blank" class="button">Live Demo</a>
+        
+        <!-- Source Code Button -->
+        <a href="https://github.com/Mohamed-Barakatts/Calculator-Mobile-Application" target="_blank" class="button">Source Code</a>
+        
+        <!-- Image Preview -->
+        <img src="../images/pro13.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+      </div>
+    </section>
+    <section id="projects">
+      <h2 id="project14">Project #14</h2>
+      <div class="project">
+        <h3>PDF Reader Application</h3>
+        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
+        
+        <!-- Live Demo Button -->
+        <a href="https://mohamed-barakatts.github.io/Ping-Pong-Game/" target="_blank" class="button">Live Demo</a>
+        
+        <!-- Source Code Button -->
+        <a href="https://github.com/Mohamed-Barakatts/PDF-Reader-Application" target="_blank" class="button">Source Code</a>
+        
+        <!-- Image Preview -->
+        <img src="../images/pro14.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+      </div>
+    </section>
+    <!-- <iframe src="https://replit.com/@MohamedBaraka12/Ping-Pong-Game?v=1?lite=true" width="100%" height="500px" frameborder="0" allowfullscreen></iframe> -->
   </main>
   <footer>
     <p>&copy; 2024 Mohamed Barakat | All Rights Reserved</p>
