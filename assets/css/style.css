@@ -382,8 +382,15 @@ footer section {
   margin-bottom: 1rem;
 }
 
-.sub-headers h3 {
-  color: #2718d6; /* Adjust the text color if needed */
+/* .sub-headers h3 {
+  color: #2718d6;
+}
+*/
+.sub-headers h4 {
+  color: #034f07; /* Adjust the text color if needed */
+  font-size: large;
+  font-style:initial;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .sub-headers h2 {
   color: #2718d6; /* Adjust the text color if needed */

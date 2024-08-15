@@ -167,6 +167,6 @@ function viewAndDownloadCert(url) {
       dot.addEventListener('click', () => showSlide(index));
     });
   
-    slideInterval = setInterval(showNextSlide, 3000);
+    slideInterval = setInterval(showNextSlide, 5000);
   });
   
