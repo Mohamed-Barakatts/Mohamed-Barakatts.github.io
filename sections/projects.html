@@ -131,9 +131,33 @@
     <section id="projects" class="sub-headers">
       <h3 id="project1">Project #01</h3>
       <div class="project">
-        <h4>Smart Chatbot</h4>
-        <p>This is a simple chatbot, named "Chatty", I created using Python and Flask. You can chat with it by clicking on the Live Demo button below.</p>
-        
+        <h4>Smart Chatbot - "Chatty"</h4>
+        <p>"Chatty" is an interactive web-based chatbot application I created using JavaScript, HTML, and CSS. The chatbot is designed to simulate conversation with users and provide responses based on predefined data. The project demonstrates the basics of creating an AI-like interface that interacts with users in real time, enhancing user engagement and providing a simple AI-driven communication experience.</p>
+    
+        <h5>Features:</h5>
+        <ul>
+          <li><strong>Interactive Chat Interface:</strong> The chatbot features a user-friendly interface with a text input field and a submit button, allowing users to type their messages and receive responses in real-time.</li>
+          <li><strong>Customizable Responses:</strong> The chatbot's responses are customizable via a JavaScript file (<code>script.js</code>) that contains predefined data. This allows for flexible updates and enhancements to the chatbot's conversational abilities.</li>
+          <li><strong>Responsive Design:</strong> The interface is designed using HTML and CSS, ensuring that the chatbot is accessible and visually appealing across various devices and screen sizes.</li>
+          <li><strong>Font Awesome Icons:</strong> Integrated icons from Font Awesome for a modern and visually appealing UI, enhancing the user's interactive experience.</li>
+          <li><strong>Simple AI Simulation:</strong> While not powered by advanced AI algorithms, "Chatty" uses conditional logic and pattern matching to simulate a basic conversation, making it an excellent starting point for learning about chatbots.</li>
+        </ul>
+    
+        <h5>How It Works:</h5>
+        <p>
+          The chatbot operates through a straightforward JavaScript file that defines how it should respond to user input. When a user types a message in the input field and presses the button, the JavaScript function checks the input against a set of predefined patterns or keywords:
+        </p>
+        <ul>
+          <li>If the user's message matches a predefined pattern, "Chatty" provides a relevant response.</li>
+          <li>If no match is found, "Chatty" responds with a default message or prompts the user for more information.</li>
+          <li>The conversation is displayed in a chat window, where user inputs and bot responses appear sequentially.</li>
+        </ul>
+    
+        <h5>Usage:</h5>
+        <p>
+          "Chatty" can be embedded in any website to provide a basic interactive experience for users. It's perfect for simple FAQs, introductory conversations, or educational purposes where users can learn about basic programming logic and web development concepts.
+        </p>
+    
         <!-- Live Demo Button -->
         <a href="https://mohamed-barakatts.github.io/web-chatty-ai/" target="_blank" class="button">Live Demo</a>
         
@@ -141,26 +165,56 @@
         <a href="https://github.com/Mohamed-Barakatts/web-chatty-ai" target="_blank" class="button">Source Code</a>
         
         <!-- Image Preview -->
-        <img src="../images/pro100.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="650">
+        <img src="../images/pro100.jpg" alt="Smart Chatbot 'Chatty' Preview" class="project-image" width="100%" height="650">
       </div>
-    </section>
+    </section>    
     
     <section id="projects" class="sub-headers">
       <h3 id="project2">Project #02</h3>
       <div class="project">
-        <h4>AI Face Detection</h4>
-        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
+        <h4>AI Face Detection and Blurring Application</h4>
+        <p>This project is a Python-based application that utilizes OpenCV and the cvzone library to detect faces in a video feed and apply a blur effect to them. The application captures video in real-time from a webcam or processes a pre-recorded video file, detects faces using an AI-based model, and dynamically blurs each detected face for privacy protection.</p>
+    
+        <h5>Features:</h5>
+        <ul>
+          <li><strong>Real-Time Face Detection</strong>: The application uses the <code>FaceDetector</code> class from the <code>cvzone</code> library to detect faces in each frame of the video feed in real time.</li>
+          <li><strong>Face Blurring</strong>: Once a face is detected, the application applies a blur effect to the region of the face. The blurring area is dynamically adjusted to cover the entire face, providing effective privacy protection.</li>
+          <li><strong>Video Processing</strong>: The application supports both real-time video capture from a webcam and processing of pre-recorded video files. It can write the processed video with blurred faces to a new video file (<code>output.mp4</code>).</li>
+          <li><strong>Customizable Blurring Effect</strong>: The blurring effect is customizable, allowing adjustments to the intensity and area of the blur applied to detected faces.</li>
+          <li><strong>User-Friendly Interface</strong>: The application displays the processed video feed in a window, allowing users to monitor the blurring in real time. Users can exit the application by pressing the 'q' key.</li>
+        </ul>
+    
+        <h5>How It Works:</h5>
+        <p>
+          The script starts by initializing the video capture object to capture frames from the webcam or a specified video file. It then creates an instance of the <code>FaceDetector</code> class to handle face detection. 
+        </p>
+        <ul>
+          <li>For each frame captured:
+            <ul>
+              <li>The <code>findFaces()</code> method detects faces and returns their coordinates.</li>
+              <li>For each detected face, the coordinates are adjusted to cover a larger area (forehead to chin) and blurred using the <code>cv2.blur()</code> function.</li>
+              <li>The blurred face region replaces the original face region in the video frame.</li>
+            </ul>
+          </li>
+          <li>The processed frame is then written to an output video file and displayed to the user in a window.</li>
+          <li>The loop continues until the user presses the 'q' key to exit.</li>
+        </ul>
+    
+        <h5>Usage:</h5>
+        <p>
+          This application is ideal for ensuring privacy in video recordings, such as surveillance footage or personal videos. To use the application, run the script in a Python environment with OpenCV and cvzone installed. You can choose to capture video from your webcam or specify a path to a video file. The application will process the video and output a new video file with blurred faces.
+        </p>
         
         <!-- Live Demo Button -->
-        <!-- <a href="https://mohamed-barakatts.github.io/Ping-Pong-Game/" target="_blank" class="button">Live Demo</a> -->
+        <!-- <a href="https://mohamed-barakatts.github.io/Face-Blur-Application/" target="_blank" class="button">Live Demo</a> -->
         
         <!-- Source Code Button -->
         <a href="https://github.com/Mohamed-Barakatts/Face-Blur-Application" target="_blank" class="button">Source Code</a>
         
         <!-- Image Preview -->
-        <img src="../images/pro3.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+        <img src="../images/pro3.jpg" alt="AI Face Detection and Blurring Application Preview" class="project-image" width="100%" height="600">
       </div>
-    </section>
+    </section>    
 
     <section id="cert-intro" class="sub-headers">
       <h2 id="games"> My Game Projects </h2>
@@ -170,20 +224,32 @@
     <section id="projects" class="sub-headers">
       <h3 id="project3">Project #03</h3>
       <div class="project">
-        <h4>Ping Pong Game</h4>
-        <p>## Overview
-          This is a simple Ping Pong game created using the Python `turtle` module. It includes two paddles, a ball, and a scoring system. The game can be controlled using the keyboard.</p>
-          
-        <p>## Features
-          - Two-player game
-          - Simple scoring system
-          - Realistic paddle and ball movement
-          - Center dashed line</p>
-          
-        <p>## Controls
-          <li> Player 1: Use `W` to move up and `S` to move down</li>
-          <li> Player 2: Use the `Up` and `Down` arrow keys</li>
-        </p>
+        <h4>Ping Pong Game - User vs. AI</h4>
+        <p>This project is a web-based Ping Pong game where a user can play against an AI-controlled paddle. The game is built using HTML5, CSS, and JavaScript, and it features a fully functional game loop, smooth animations, and simple controls for an engaging gaming experience.</p>
+        
+        <h5>Features:</h5>
+        <ul>
+          <li><strong>User vs. AI Gameplay:</strong> The game pits a human player against a computer-controlled paddle. The AI is programmed to track the ball's movement and adjust its position accordingly, providing a challenging opponent for the player.</li>
+          <li><strong>Smooth Animations:</strong> Utilizes the HTML5 <code>&lt;canvas&gt;</code> element to render game graphics and animations, creating a visually appealing and smooth gameplay experience.</li>
+          <li><strong>Responsive Design:</strong> The game layout is designed to adjust dynamically based on the player's device, ensuring a consistent experience whether on a desktop or mobile device.</li>
+          <li><strong>Intuitive Controls:</strong> The user can control their paddle using the up and down arrow keys, making it easy for players to pick up and play.</li>
+          <li><strong>Background and Aesthetics:</strong> The game features a custom background image and simple, clean design elements to enhance the visual appeal.</li>
+        </ul>
+        
+        <h5>How It Works:</h5>
+        <p>The game is initiated in the browser, displaying a playing field with two paddles and a ball. The player controls the left paddle using the arrow keys, while the AI controls the right paddle. The goal is to score points by making the ball pass the opponent's paddle. The AI uses a basic algorithm to predict the ball's trajectory and adjust its position for defense.</p>
+        
+        <h5>Technologies Used:</h5>
+        <ul>
+          <li><strong>HTML5 and Canvas:</strong> Used for rendering the game elements and handling the animations.</li>
+          <li><strong>CSS:</strong> Provides the styling for the game interface, including layout, fonts, and background.</li>
+          <li><strong>JavaScript:</strong> Handles the game logic, including user input, AI behavior, collision detection, and scorekeeping.</li>
+        </ul>
+        
+        <h5>Controls:</h5>
+        <ul>
+          <li><strong>Player Controls:</strong> Use the 'Up' arrow key to move the paddle up and the 'Down' arrow key to move it down.</li>
+        </ul>
         
         <!-- Live Demo Button -->
         <a href="https://mohamed-barakatts.github.io/Ping-Pong-Game/" target="_blank" class="button">Live Demo</a>
@@ -194,14 +260,37 @@
         <!-- Image Preview -->
         <img src="../images/pro2.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
       </div>
-    </section>
+    </section>    
     
     <section id="projects" class="sub-headers">
       <h3 id="project4">Project #04</h3>
       <div class="project">
-        <h4>Snake game</h4>
-        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
-        
+        <h4>Snake Game - JavaScript</h4>
+        <p>This project is a classic Snake game developed using JavaScript, HTML, and CSS. The objective is to control a snake to eat the food appearing on the board while avoiding collisions with the walls or the snake's own body. As the snake eats the food, it grows in length, making the game progressively more challenging.</p>
+    
+        <h5>Features:</h5>
+        <ul>
+          <li><strong>Dynamic Gameplay:</strong> The game dynamically increases the difficulty as the snake grows longer with each piece of food consumed.</li>
+          <li><strong>Score Tracking:</strong> Displays the current score and high score, allowing players to track their progress over multiple sessions.</li>
+          <li><strong>Responsive Controls:</strong> Intuitive keyboard controls (Arrow keys) for moving the snake in different directions.</li>
+          <li><strong>Visual Feedback:</strong> The game provides visual feedback for the player's current and high score, enhancing the gaming experience.</li>
+        </ul>
+    
+        <h5>How It Works:</h5>
+        <p>The game initializes with a small snake and a piece of food randomly placed on the board. The player controls the snake using the arrow keys to navigate towards the food. Each time the snake eats the food, it grows longer, and a new piece of food appears. The game continues until the snake collides with itself or the wall.</p>
+    
+        <h5>Technologies Used:</h5>
+        <ul>
+          <li><strong>HTML and CSS:</strong> Used for the game's structure and styling, providing a clean and responsive user interface.</li>
+          <li><strong>JavaScript:</strong> Implements the game logic, including movement, collision detection, and scorekeeping.</li>
+          <li><strong>Font Awesome:</strong> Utilized for arrow icons to represent directional controls visually on the interface.</li>
+        </ul>
+    
+        <h5>Controls:</h5>
+        <ul>
+          <li><strong>Arrow Keys:</strong> Use the 'Left', 'Up', 'Right', and 'Down' arrow keys to control the snake's movement.</li>
+        </ul>
+    
         <!-- Live Demo Button -->
         <a href="https://mohamed-barakatts.github.io/Snake-Game/" target="_blank" class="button">Live Demo</a>
         
@@ -209,16 +298,33 @@
         <a href="https://github.com/Mohamed-Barakatts/Snake-Game" target="_blank" class="button">Source Code</a>
         
         <!-- Image Preview -->
-        <img src="../images/pro7.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+        <img src="../images/pro7.jpg" alt="Snake Game Preview" class="project-image" width="100%" height="600">
       </div>
-    </section>
+    </section>    
 
     <section id="projects" class="sub-headers">
       <h3 id="project5">Project #05</h3>
       <div class="project">
         <h4>Tic-Tac-Toe Game</h4>
-        <p>This is a classic two-player Tic-Tac-Toe Game game built with Python. You can play the game or view the source code below.</p>
-        
+        <p>This project is a classic Tic-Tac-Toe game developed using HTML, CSS, and JavaScript. The game allows two players to take turns marking their symbols (X or O) on a 3x3 grid, aiming to align three of their marks horizontally, vertically, or diagonally.</p>
+    
+        <h5>Features:</h5>
+        <ul>
+          <li><strong>Interactive Gameplay:</strong> Players click on grid cells to place their mark, and the game dynamically updates to show the current turn and results.</li>
+          <li><strong>Winning Detection:</strong> The game automatically detects winning combinations and displays the winner or if the game is a draw.</li>
+          <li><strong>Play Again Option:</strong> After the game ends, players have the option to reset the board and start a new game.</li>
+          <li><strong>Simple UI:</strong> A minimalistic user interface for easy and intuitive gameplay.</li>
+        </ul>
+    
+        <h5>How It Works:</h5>
+        <p>The game initializes with an empty 3x3 grid and indicates the first player's turn. Players click on the cells to place their marks. The game checks for winning combinations after each turn and displays the winner or a draw message. Players can click the "Play Again" button to reset the board and start a new game.</p>
+    
+        <h5>Technologies Used:</h5>
+        <ul>
+          <li><strong>HTML and CSS:</strong> Used to structure and style the game board and layout.</li>
+          <li><strong>JavaScript:</strong> Implements the game logic, turn management, and winning condition checks.</li>
+        </ul>
+    
         <!-- Live Demo Button -->
         <a href="https://mohamed-barakatts.github.io/Tic-Tac-Toe-Game/" target="_blank" class="button">Live Demo</a>
         
@@ -226,16 +332,35 @@
         <a href="https://github.com/Mohamed-Barakatts/Tic-Tac-Toe-Game" target="_blank" class="button">Source Code</a>
         
         <!-- Image Preview -->
-        <img src="../images/pro8.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+        <img src="../images/pro8.jpg" alt="Tic-Tac-Toe Game Preview" class="project-image" width="100%" height="600">
       </div>
-    </section>
+    </section>    
 
     <section id="projects" class="sub-headers">
       <h3 id="project6">Project #06</h3>
       <div class="project">
         <h4>Jets War Game</h4>
-        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
-        
+        <p>This project is an exciting Jets War Game developed using JavaScript and HTML5 Canvas. Players control a jet that moves across the screen, dodging enemies and collecting health kits to stay alive while aiming for a high score.</p>
+    
+        <h5>Features:</h5>
+        <ul>
+          <li><strong>Interactive Gameplay:</strong> Control the jet using mouse movements or touch, and shoot bullets to destroy incoming enemies.</li>
+          <li><strong>Score and Health Tracking:</strong> The game keeps track of the player's score and health, displaying them on the screen.</li>
+          <li><strong>Health Kits:</strong> Players can collect health kits to restore health points.</li>
+          <li><strong>Dynamic Enemy Generation:</strong> Enemies appear at random intervals, adding to the game's difficulty and excitement.</li>
+          <li><strong>Simple UI:</strong> A clean and simple user interface for easy and intuitive gameplay.</li>
+        </ul>
+    
+        <h5>How It Works:</h5>
+        <p>The game initializes with a player-controlled jet at the bottom of the screen. Enemies spawn from the top and move downwards. Players aim to avoid enemies while shooting them down. Collecting health kits increases the player's health, and missing an enemy decreases it. The game ends when the player's health reaches zero.</p>
+    
+        <h5>Technologies Used:</h5>
+        <ul>
+          <li><strong>HTML and CSS:</strong> Used to structure and style the game canvas and layout.</li>
+          <li><strong>JavaScript:</strong> Implements the game logic, player controls, enemy movement, collision detection, and score/health management.</li>
+          <li><strong>HTML5 Canvas:</strong> Renders the game graphics and animations.</li>
+        </ul>
+    
         <!-- Live Demo Button -->
         <a href="https://mohamed-barakatts.github.io/Space_War_Game/" target="_blank" class="button">Live Demo</a>
         
@@ -243,65 +368,116 @@
         <a href="https://github.com/Mohamed-Barakatts/Space_War_Game" target="_blank" class="button">Source Code</a>
         
         <!-- Image Preview -->
-        <img src="../images/pro9.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+        <img src="../images/pro9.jpg" alt="Jets War Game Preview" class="project-image" width="100%" height="600">
       </div>
-    </section>
+    </section>    
 
     <section id="cert-intro" class="sub-headers">
       <h2 id="desktop-apps"> My Desktop Apps Projects </h2>
-        <p>Below are the projects I've built by my current experiences. Almost each project section contains a preview image of it, explanation about it, and info about how you can try it on your browser.</p>
+      <p>Below are the projects I've built based on my current experience. Each project section contains a preview image, an explanation, and information on how you can try it on your browser.</p>
     </section>
-
+    
     <section id="projects" class="sub-headers">
       <h3 id="project7">Project #07</h3>
       <div class="project">
-          <h4>Weather Application</h4>
-          <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
-          
-          <!-- Live Demo Button -->
-          <a href="https://mohamed-barakatts.github.io/Weather-App/" target="_blank" class="button">Live Demo</a>
-          
-          <!-- Source Code Button -->
-          <a href="https://github.com/Mohamed-Barakatts/Weather-App" target="_blank" class="button">Source Code</a>
-          
-          <!-- Image Preview -->
-          <img src="../images/pro11.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
-        </div>
-    </section>
+        <h4>Weather Application</h4>
+        <p>This Weather Application provides real-time weather information, including temperature, humidity, and wind speed, for any location entered by the user. The app features a clean and intuitive design, making it easy for users to get accurate weather updates quickly.</p>
+    
+        <h5>Features:</h5>
+        <ul>
+          <li><strong>Real-Time Weather Data:</strong> Get current weather details for any city or location.</li>
+          <li><strong>User-Friendly Interface:</strong> Simple and easy-to-navigate UI for a smooth user experience.</li>
+          <li><strong>Search Functionality:</strong> Users can search for any location to get the latest weather updates.</li>
+          <li><strong>Weather Details:</strong> Displays temperature, humidity, wind speed, and weather conditions like clear sky, clouds, rain, etc.</li>
+        </ul>
+    
+        <h5>How It Works:</h5>
+        <p>The application allows users to enter a location in the search box. Upon submission, it fetches the weather data for that location and displays it on the screen. The app uses a weather API to get real-time weather information.</p>
+    
+        <h5>Technologies Used:</h5>
+        <ul>
+          <li><strong>HTML and CSS:</strong> Used for structuring the layout and styling the application.</li>
+          <li><strong>JavaScript:</strong> Implements the logic for fetching and displaying weather data.</li>
+          <li><strong>Weather API:</strong> Fetches real-time weather data based on the user's input location.</li>
+          <li><strong>Boxicons:</strong> Provides icons for the search button and weather conditions.</li>
+        </ul>
+    
+        <!-- Live Demo Button -->
+        <a href="https://mohamed-barakatts.github.io/Weather-App/" target="_blank" class="button">Live Demo</a>
+    
+        <!-- Source Code Button -->
+        <a href="https://github.com/Mohamed-Barakatts/Weather-App" target="_blank" class="button">Source Code</a>
+    
+        <!-- Image Preview -->
+        <img src="../images/pro11.jpg" alt="Weather Application Preview" class="project-image" width="100%" height="600">
+      </div>
+    </section>    
     
     <section id="projects" class="sub-headers">
       <h3 id="project8">Project #08</h3>
       <div class="project">
-        <h4>IDE application</h4>
-        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
-        
+        <h4>IDE Application - PyCodeLite</h4>
+        <p>This is a web-based Integrated Development Environment (IDE) application I created that allows users to write and run HTML, CSS, and JavaScript code in real time. The application provides a split view with an editor panel for writing code and a live output panel to see the results immediately.</p>
+    
+        <h5>Features:</h5>
+        <ul>
+          <li><strong>Real-Time Code Execution:</strong> Write HTML, CSS, and JavaScript code and see the output instantly.</li>
+          <li><strong>Simple User Interface:</strong> A clean and intuitive design makes it easy for users to write and test their code.</li>
+          <li><strong>Responsive Design:</strong> Works well on both desktop and mobile devices.</li>
+          <li><strong>Syntax Highlighting:</strong> Uses Font Awesome icons for HTML, CSS, and JavaScript to enhance user experience.</li>
+        </ul>
+    
+        <h5>How It Works:</h5>
+        <p>The application features three text areas, each dedicated to HTML, CSS, and JavaScript. When the user types in any of these text areas, the content is dynamically injected into an iframe to display the output. This setup allows for immediate feedback and a seamless coding experience.</p>
+    
+        <h5>Technologies Used:</h5>
+        <ul>
+          <li><strong>HTML and CSS:</strong> Used to create the structure and style of the IDE application.</li>
+          <li><strong>JavaScript:</strong> Provides the logic to update the output in real time as the user types.</li>
+          <li><strong>Font Awesome:</strong> Icons are used for better visual representation and user experience.</li>
+        </ul>
+    
         <!-- Live Demo Button -->
         <a href="https://mohamed-barakatts.github.io/PyCodeLite/" target="_blank" class="button">Live Demo</a>
-        
+    
         <!-- Source Code Button -->
         <a href="https://github.com/Mohamed-Barakatts/PyCodeLite/" target="_blank" class="button">Source Code</a>
-        
+    
         <!-- Image Preview -->
-        <img src="../images/pro10.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+        <img src="../images/pro10.jpg" alt="IDE Application Preview" class="project-image" width="100%" height="600">
       </div>
-    </section>
+    </section>    
 
     <section id="projects" class="sub-headers">
       <h3 id="project9">Project #09</h3>
       <div class="project">
         <h4>PDF Reader Application</h4>
-        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
+        <p>This is a PDF Reader application I created using Python and Tkinter. The application allows users to open and view PDF files within a custom GUI. The viewer is built using the Tkinter library and a third-party module, `tkPDFViewer2`, which provides the functionality to render PDF documents.</p>
         
-        <!-- Live Demo Button -->
-        <!-- <a href="https://mohamed-barakatts.github.io/Ping-Pong-Game/" target="_blank" class="button">Live Demo</a> -->
-        
+        <h5>Features:</h5>
+        <ul>
+          <li><strong>File Browser:</strong> Allows users to select a PDF file from their system using a file dialog.</li>
+          <li><strong>PDF Viewing:</strong> Opens and displays the selected PDF file within the application window.</li>
+          <li><strong>Customizable UI:</strong> The window's background color and button styles can be easily modified.</li>
+        </ul>
+    
+        <h5>How It Works:</h5>
+        <p>The application uses a button to trigger a file dialog for selecting PDF files. Once a file is selected, it is opened and displayed in a Tkinter frame using the `tkPDFViewer2` library. The application is built to handle basic functionalities such as opening and viewing PDF documents.</p>
+    
+        <h5>Technologies Used:</h5>
+        <ul>
+          <li><strong>Python:</strong> The core language used for building the application logic.</li>
+          <li><strong>Tkinter:</strong> Used for creating the GUI components and handling user interactions.</li>
+          <li><strong>tkPDFViewer2:</strong> A third-party library that renders PDF documents within the Tkinter interface.</li>
+        </ul>
+    
         <!-- Source Code Button -->
         <a href="https://github.com/Mohamed-Barakatts/PDF-Reader-Application" target="_blank" class="button">Source Code</a>
-        
+    
         <!-- Image Preview -->
-        <img src="../images/pro14.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+        <img src="../images/pro14.jpg" alt="PDF Reader Application Preview" class="project-image" width="100%" height="600">
       </div>
-    </section>
+    </section>    
 
     <section id="cert-intro" class="sub-headers">
       <h2 id="cybersecurity"> My Cybersecurity Projects </h2>
@@ -311,79 +487,155 @@
     <section id="projects" class="sub-headers">
       <h3 id="project10">Project #10</h3>
       <div class="project">
-        <h4>Phone Number Tracking</h4>
-        <p>A Python script that extracts and displays detailed information about phone numbers using the `phonenumbers` library. This tool allows users to input a phone number with its country code and provides information such as country code, national number, region, country, carrier, and timezone.
-
-          Features:
-          - Parses and validates phone numbers with the `phonenumbers` library.
-          - Retrieves information such as country code, national number, region, country, carrier, and timezone.
-          - Handles invalid phone numbers gracefully.
-          
-          Usage:
-          1. Run the script in a Python environment.
-          2. Enter a phone number with its country code when prompted.
-          3. View detailed information about the phone number in the terminal.
-          
-          Dependencies:
-          - `phonenumbers` library (install via `pip install phonenumbers`)
-          
-          This script is useful for validating and retrieving basic information about phone numbers, suitable for use in various applications and services that require phone number data.
+        <h4>Phone Number Information Extractor</h4>
+        <p>This project is a Python-based script that extracts and displays detailed information about phone numbers. Utilizing the <code>phonenumbers</code> library, the script takes a phone number input from the user and provides various details such as the country code, national number, geographic location, carrier name, and timezone associated with the number.</p>
+    
+        <h5>Features:</h5>
+        <ul>
+          <li><strong>Country Code and National Number Extraction</strong>: The script identifies and displays the country code and the national phone number format from the user's input.</li>
+          <li><strong>Geographic Information</strong>: It determines the geographic location (region and country) of the phone number using the <code>geocoder</code> module from the <code>phonenumbers</code> library.</li>
+          <li><strong>Carrier Information</strong>: The script provides the name of the carrier or service provider associated with the phone number using the <code>carrier</code> module.</li>
+          <li><strong>Timezone Detection</strong>: It detects and displays the timezone(s) in which the phone number is registered using the <code>timezone</code> module.</li>
+          <li><strong>Error Handling</strong>: The script includes error handling to ensure that the entered number is valid. If the phone number format is incorrect or the number is invalid, it prompts the user to enter a real phone number.</li>
+        </ul>
+    
+        <h5>How It Works:</h5>
+        <p>
+          The script starts by importing necessary modules from the <code>phonenumbers</code> library. The user is prompted to enter a phone number with its country code. The script then attempts to parse the entered number using the <code>phonenumbers.parse()</code> method.
+        </p>
+        <ul>
+          <li>If the number is valid, the script extracts and displays the following information:
+            <ul>
+              <li>Country Code and National Number</li>
+              <li>Geographic Location (City and Country)</li>
+              <li>Carrier Name</li>
+              <li>Timezone(s) of the Phone Number</li>
+            </ul>
+          </li>
+          <li>If the entered number is invalid, the script displays an error message and terminates.</li>
+        </ul>
+    
+        <h5>Usage:</h5>
+        <p>
+          This tool is useful for verifying phone numbers and obtaining information about them for various purposes, such as cybersecurity checks, data validation, and telecommunication analysis. To use the script, run it in a Python environment and input a phone number when prompted.
         </p>
         
         <!-- Live Demo Button -->
-        <!-- <a href="https://mohamed-barakatts.github.io/Ping-Pong-Game/" target="_blank" class="button">Live Demo</a> -->
+        <!-- <a href="https://mohamed-barakatts.github.io/Phone-Number-Information-Extractor/" target="_blank" class="button">Live Demo</a> -->
         
         <!-- Source Code Button -->
         <a href="https://github.com/Mohamed-Barakatts/Phone-Number-Information-Extractor" target="_blank" class="button">Source Code</a>
         
         <!-- Image Preview -->
-        <img src="../images/pro4.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+        <img src="../images/pro4.jpg" alt="Phone Number Information Extractor Preview" class="project-image" width="100%" height="600">
       </div>
-    </section>
+    </section>    
     <section id="projects" class="sub-headers">
       <h3 id="project11">Project #11</h3>
       <div class="project">
         <h4>Password Manager</h4>
-        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
+        <p>The Password Manager project is a Python-based application designed to help users generate, store, retrieve, update, and delete strong passwords securely. It features a simple command-line interface with multiple options to manage passwords efficiently. The project uses separate modules for password generation (<code>passwords_generator</code>) and database management (<code>database</code>), ensuring that passwords are securely generated and stored.</p>
         
-        <!-- Live Demo Button -->
-        <!-- <a href="https://mohamed-barakatts.github.io/Ping-Pong-Game/" target="_blank" class="button">Live Demo</a> -->
+        <!-- Features List -->
+        <h5>Features:</h5>
+        <ul>
+          <li><strong>Generate a New Password:</strong> Enables you to generate a strong password using the <code>passwords_generator</code> module.</li>
+          <li><strong>Store a Password:</strong> Allows the user to store a generated password securely in a database.</li>
+          <li><strong>Retrieve Passwords:</strong> Provides functionality to retrieve all stored passwords from the database.</li>
+          <li><strong>Update a Password:</strong> (Future Enhancement) Will allow the user to update an existing password.</li>
+          <li><strong>Delete a Password:</strong> Enables the user to delete a password from the database.</li>
+          <li><strong>Exit:</strong> Safely exits the application, ensuring all changes are saved.</li>
+        </ul>
+
+        <!-- Usage Instructions -->
+        <h5>Usage:</h5>
+        <p>To use the Password Manager application, follow these steps:</p>
+        <ol>
+          <li>Clone the repository from GitHub: By clicking on the "Source Code" button Below</li>
+          <li>Navigate to the project directory: <code>cd Password-Manager</code></li>
+          <li>Ensure you have Python installed on your machine. If not, download it from the <a href="https://www.python.org/downloads/" target="_blank">official Python website</a>.</li>
+          <li>Run the <code>main.py</code> file using the command: <code>python main.py</code></li>
+          <li>Follow the on-screen instructions to generate, store, retrieve, update, or delete passwords as needed.</li>
+          <li>Choose the 'Exit' option to safely close the application and save your changes.</li>
+        </ol>
         
         <!-- Source Code Button -->
         <a href="https://github.com/Mohamed-Barakatts/Password-Manager" target="_blank" class="button">Source Code</a>
         
         <!-- Image Preview -->
-        <img src="../images/pro5.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+        <img src="../images/pro5.jpg" alt="Password Manager Preview" class="project-image" width="100%" height="600">
       </div>
-    </section>
+    </section>    
     <section id="projects" class="sub-headers">
       <h3 id="project12">Project #12</h3>
       <div class="project">
-        <h4>Network Intrusion Detection System</h4>
-        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
+        <h4>Network Packet Sniffer and Port Scan Detector</h4>
+        <p>This project is a Python-based network packet sniffer and port scan detector designed to monitor and analyze network traffic on a local network. Using the <code>scapy</code> library, the script captures network packets in real-time, identifies potential port scans, and tracks devices connected to the local network.</p>
+    
+        <h5>Features:</h5>
+        <ul>
+          <li><strong>Real-Time Packet Sniffing</strong>: The script uses the <code>scapy</code> library to sniff network traffic in real time, capturing all IP packets on the network.</li>
+          <li><strong>Port Scan Detection</strong>: By analyzing incoming packets, the script can detect potential port scans targeting devices on the local network. Port scans are often used by attackers to find open ports on a device, which can then be exploited.</li>
+          <li><strong>Device Tracking</strong>: The script keeps track of unique IP addresses of devices connected to the local network. It identifies devices with IP addresses starting with "192.168.", which is a common range for private local networks.</li>
+          <li><strong>Logging and Monitoring</strong>: Each packet detected is logged with a timestamp, source IP address, destination port, and the number of devices connected to the network. This information is printed to the console and optionally saved to a log file (<code>network_log.txt</code>) for further analysis.</li>
+        </ul>
+    
+        <h5>How It Works:</h5>
+        <p>
+          The script initializes by importing necessary modules from <code>scapy</code> and setting up a counter for the number of packets and a set to store unique local IP addresses. The core functionality is handled by the <code>detect_port_scan</code> function, which is called for each packet captured by the <code>sniff</code> function.
+        </p>
+        <ul>
+          <li>For each packet, the function checks if it has an IP layer and retrieves the source IP address and destination port.</li>
+          <li>If the source IP is within the local network range (<code>192.168.x.x</code>), it is added to the <code>connected_devices</code> set to track unique devices.</li>
+          <li>The packet details, along with the timestamp and the count of connected devices, are logged to the console and saved to a log file.</li>
+          <li>The <code>sniff</code> function continuously monitors the network interface for IP packets and passes them to the <code>detect_port_scan</code> function.</li>
+        </ul>
+    
+        <h5>Usage:</h5>
+        <p>
+          To use this network sniffer and port scan detector, run the script with appropriate permissions to access network interfaces. It is suitable for network administrators and cybersecurity enthusiasts to monitor network activity and detect potential threats in a local network environment.
+        </p>
         
         <!-- Live Demo Button -->
-        <!-- <a href="https://mohamed-barakatts.github.io/Ping-Pong-Game/" target="_blank" class="button">Live Demo</a> -->
+        <!-- <a href="https://mohamed-barakatts.github.io/Network-Detection-System/" target="_blank" class="button">Live Demo</a> -->
         
         <!-- Source Code Button -->
         <a href="https://github.com/Mohamed-Barakatts/Network-Detection-System" target="_blank" class="button">Source Code</a>
         
         <!-- Image Preview -->
-        <img src="../images/pro6.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+        <img src="../images/pro6.jpg" alt="Network Detection System Preview" class="project-image" width="100%" height="600">
       </div>
-    </section>
+    </section>    
 
     <section id="cert-intro" class="sub-headers">
-      <h2 id="mobile-apps"> My Mobile Apps Projects </h2>
-        <p>Below are the projects I've built by my current experiences. Each project section contains a preview image of it, explanation about it, and info about how you can try it on your browser.</p>
+      <h2 id="mobile-apps">My Mobile Apps Projects</h2>
+      <p>Below are the projects I've built based on my current experiences. Each project section contains a preview image, an explanation about it, and information on how you can try it in your browser.</p>
     </section>
-
+    
     <section id="projects" class="sub-headers">
       <h3 id="project13">Project #13</h3>
       <div class="project">
         <h4>Calculator Application</h4>
-        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
+        <p>This is a mobile-friendly Calculator application built using HTML, CSS, and JavaScript. The calculator performs basic arithmetic operations and includes advanced functionality such as square root, power, and parentheses for more complex calculations.</p>
         
+        <h5>Features:</h5>
+        <ul>
+          <li><strong>Basic Arithmetic:</strong> Supports addition, subtraction, multiplication, and division.</li>
+          <li><strong>Advanced Functions:</strong> Includes square root, exponentiation, and percentage calculations.</li>
+          <li><strong>Clear and Delete:</strong> Allows users to clear all input or delete the last entered character.</li>
+          <li><strong>Responsive Design:</strong> Designed to work seamlessly on mobile devices.</li>
+        </ul>
+    
+        <h5>How It Works:</h5>
+        <p>The application features a clean and simple user interface with buttons representing digits, operators, and functions. Users can input expressions directly using the buttons, and the results are computed in real time when the "=" button is pressed. The screen at the top displays the current input and results.</p>
+    
+        <h5>Technologies Used:</h5>
+        <ul>
+          <li><strong>HTML:</strong> Used for structuring the application layout.</li>
+          <li><strong>CSS:</strong> Provides styling for the calculator to enhance its visual appeal and usability.</li>
+          <li><strong>JavaScript:</strong> Handles the logic for all calculator operations and updates the display dynamically.</li>
+        </ul>
+    
         <!-- Live Demo Button -->
         <a href="https://mohamed-barakatts.github.io/Calculator-Mobile-Application" target="_blank" class="button">Live Demo</a>
         
@@ -391,15 +643,34 @@
         <a href="https://github.com/Mohamed-Barakatts/Calculator-Mobile-Application" target="_blank" class="button">Source Code</a>
         
         <!-- Image Preview -->
-        <img src="../images/pro13.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+        <img src="../images/pro13.jpg" alt="Calculator Application Preview" class="project-image" width="100%" height="600">
       </div>
     </section>
+    
     <section id="projects" class="sub-headers">
       <h3 id="project14">Project #14</h3>
       <div class="project">
         <h4>To-Do List Application</h4>
-        <p>This is a Ping Pong game I created using Python and Turtle graphics. You can play the game or view the source code below.</p>
+        <p>This is a To-Do List application I created using HTML, CSS, and JavaScript. The application allows users to add, delete, and mark tasks as completed, helping them manage their daily tasks efficiently. The app's responsive design ensures usability across all devices, from desktops to mobile phones.</p>
         
+        <h5>Features:</h5>
+        <ul>
+          <li><strong>Add Tasks:</strong> Users can add new tasks to the list by entering text and pressing the "Add" button or hitting enter.</li>
+          <li><strong>Mark Tasks as Completed:</strong> Tasks can be marked as completed by clicking the checkbox next to each task.</li>
+          <li><strong>Delete Tasks:</strong> Users can remove tasks from the list by clicking the delete button.</li>
+          <li><strong>Responsive Design:</strong> The app is designed to work seamlessly on both desktop and mobile devices.</li>
+        </ul>
+    
+        <h5>How It Works:</h5>
+        <p>The To-Do List application provides a simple interface for task management. Users can enter tasks in the input field and either click the "Add" button or press enter to add them to the list. Each task can be marked as completed by checking the corresponding checkbox, and unwanted tasks can be removed using the delete button. The interface dynamically updates to reflect the current state of the task list.</p>
+    
+        <h5>Technologies Used:</h5>
+        <ul>
+          <li><strong>HTML:</strong> Provides the basic structure of the application.</li>
+          <li><strong>CSS:</strong> Used to style the application for a clean, modern look.</li>
+          <li><strong>JavaScript:</strong> Implements the functionality for adding, removing, and marking tasks as completed.</li>
+        </ul>
+    
         <!-- Live Demo Button -->
         <a href="https://mohamed-barakatts.github.io/To-Do-List-App/" target="_blank" class="button">Live Demo</a>
         
@@ -407,9 +678,10 @@
         <a href="https://github.com/Mohamed-Barakatts/To-Do-List-App" target="_blank" class="button">Source Code</a>
         
         <!-- Image Preview -->
-        <img src="../images/pro12.jpg" alt="Ping Pong Game Preview" class="project-image" width="100%" height="600">
+        <img src="../images/pro12.jpg" alt="To-Do List Application Preview" class="project-image" width="100%" height="600">
       </div>
     </section>
+    
     <!-- <iframe src="https://replit.com/@MohamedBaraka12/Ping-Pong-Game?v=1?lite=true" width="100%" height="500px" frameborder="0" allowfullscreen></iframe> -->
   </main>
   <footer>

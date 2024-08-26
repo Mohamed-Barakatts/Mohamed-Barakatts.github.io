@@ -571,3 +571,61 @@ iframe {
   border-radius: 8px;
   margin-top: 1rem;
 }
+
+/* Welcome Section Styles */
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh; /* Makes sure it takes the full viewport height */
+  padding: 40px;
+  background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.welcome-container {
+  width: 100%;
+  max-width: 1700px; /* Maximum width for better readability */
+  padding: 50px;
+  background: white; /* Background for the welcome message */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  border: 2px solid #007bff; /* Solid blue border to make it stand out */
+  text-align: center; /* Center-align text */
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.welcome-container:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.welcome-title {
+  font-size: 2.5em; /* Larger font size for the title */
+  font-weight: 700;
+  color: #007bff; /* Blue color to match border */
+  margin-bottom: 20px;
+}
+
+.intro-paragraph {
+  font-size: 1.2em; /* Slightly larger text for better readability */
+  line-height: 1.6;
+  color: #333; /* Darker text color for better contrast */
+  margin-bottom: 20px;
+}
+
+.explore-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1em;
+  color: #fff;
+  background-color: rgba(114, 99, 10, 0.845); /* Button color */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: red; /* Darker color on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
